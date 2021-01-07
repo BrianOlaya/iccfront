@@ -95,7 +95,7 @@ export const Slide = styled.div`
     animation-iteration-count: infinite;
     animation-direction: linear;
     width: 500%;
-    margin: 5% 0;
+    margin: 5% 0 0% 0;
     padding-top: 10%;
     height: 130%;
   }

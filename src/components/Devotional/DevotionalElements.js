@@ -92,6 +92,15 @@ font-weight:700;
 text-align: right;
 `;
 
+export const Loading = styled.h2`
+  color:#092B8A;
+  margin-bottom: 1%;
+  text-align:center;
+  //font-weight: 400;
+  @media screen and (max-width: 768px){
+    margin-bottom: 2%;
+    }
 
+`;
 
 

@@ -26,7 +26,9 @@ const Iwant = ({ isOpen, toggle }) => {
             </TitleGral>
           </ContainerHead>
           <Content>
+          
             <Paragraph>
+            <TitleContent>Bienvenido!</TitleContent>
               Es un gusto para nosotros que estes aquí! Dios tiene un propósito
               especial para tu vida, el primero y más grande es que lo conozcas
               y tengas una relación cercana con Él. Cuando esto ocurre tu visión
@@ -49,6 +51,7 @@ const Iwant = ({ isOpen, toggle }) => {
           </Content>
 
           <Content>
+          <TitleContent>La decisión más importante:</TitleContent>
             <Paragraph>
               Tomar la decisión de acercarse a Jesús es la decisión mas
               importane en la vida del una persona, pues al hacerlo estamos
@@ -58,9 +61,8 @@ const Iwant = ({ isOpen, toggle }) => {
               Él, con todo el corazón y con fé, las palabras escritas en la
               siguiente oración.
             </Paragraph>
-            <TitleContent>La decisión más importante</TitleContent>
+      
           </Content>
-
           <Content>
             <TitleContent>Oración:</TitleContent>
             <Paragraph>

@@ -52,7 +52,7 @@ const FormularioNuevos = () => {
       apellido.trim() === "" ||
       telefono.trim() === ""
     ) {
-      mostrarAlerta("Nombres, Apellidos y Telefono son obligatorios");
+      mostrarAlerta("Nombre, Apellido y Teléfono son obligatorios");
       return;
     }
 

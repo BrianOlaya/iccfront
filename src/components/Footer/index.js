@@ -30,7 +30,7 @@ const FooterElements = () => {
   };
 
   return (
-    <FooterContainer id="">
+    <FooterContainer id="contacto">
       <FooterWrap>
         <FooterLinksContainer>
           <ContainerMapLinks>

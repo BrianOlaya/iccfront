@@ -121,6 +121,8 @@ export const ImgLogo = styled.img`
 export const WebsiteRights = styled.small`
   color: #f1f2f4;
   margin-bottom: 16px;
+  text-align:center;
+
 `;
 
 export const SocialIcons = styled.div`

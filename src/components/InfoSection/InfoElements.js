@@ -79,6 +79,9 @@ export const Subtitle = styled.p`
   font-size: 20px;
   line-height: 24px;
   color: ${({ darkText }) => (darkText ? "#051C59" : "#F1F2F4")};
+  @media screen and (max-width: 480px) {
+    text-align:justify;
+  }
 `;
 
 export const BtnWrap = styled.div`

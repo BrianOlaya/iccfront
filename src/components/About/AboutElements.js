@@ -137,6 +137,8 @@ export const Content = styled.div`
    `;
 export const ParagraphCard = styled.p`
   font-size: 15px;
+  text-align:justify;
+
 `;
 
 export const ImgEarth = styled.img`

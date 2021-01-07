@@ -2,7 +2,7 @@ import React, { useContext, useEffect } from "react";
 import devocionalContext from "../context/devocionales/devocionalContext";
 import AlertaContext from "../context/alertas/alertaContext";
 import Moment from "react-moment";
-import {ContainerDevotional, Title, Quote, Content, Author, Date } from './DevotionalElements';
+import {ContainerDevotional, Title, Quote, Content, Author, Date,Loading} from './DevotionalElements';
 
 const ListDevotional = () => {
   //extraer devocionales de initialState
@@ -24,7 +24,7 @@ const ListDevotional = () => {
 
   //valida si hay devocionales
   if (devocionales.length === 0)
-    return <h2>Cargando devocionales...</h2>;
+    return <Loading>Cargando devocionales...</Loading>;
 
   return (
     <>{devocionales.length===0 ?<Title>devocional.titulo</Title>

@@ -7,7 +7,7 @@ import AuthState from "./components/context/autenticacion/authState";
 import IntegrantesState from "./components/context/integrantes/integranteState";
 import DevocionalesState from "./components/context/devocionales/devocionalState";
 import NuevoState from "./components/context/nuevos/nuevoState";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { HashRouter as Router, Switch, Route } from "react-router-dom";
 import LoginPage from "./pages/login";
 import IwantPage from "./pages/iwant";
 import AboutPage from "./pages/about";
