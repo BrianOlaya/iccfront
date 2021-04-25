@@ -11,9 +11,11 @@ import { HashRouter as Router, Switch, Route } from "react-router-dom";
 import LoginPage from "./pages/login";
 import IwantPage from "./pages/iwant";
 import AboutPage from "./pages/about";
+import PoliticsPage from './pages/politics';
 import ActivitiesPage from "./pages/activities";
-import DevotionalPage from "./pages/devotional";
-import ContactPage from "./pages/contact";
+import DevotionalsPage from "./pages/devotionals";
+import Devotional from "./pages/devotional";
+//import ContactPage from "./pages/contact";
 import DashboardPage from "./pages/dashboard";
 import RutaPrivada from "./components/rutas/RutaPrivada";
 
@@ -36,8 +38,10 @@ function App() {
                   <Route path="/quiero" component={IwantPage} exact />
                   <Route path="/nosotros" component={AboutPage} exact />
                   <Route path="/actividades" component={ActivitiesPage} exact />
-                  <Route path="/devocionales" component={DevotionalPage} exact/>
-                  <Route path="/contacto" component={ContactPage} exact />
+                  <Route path="/devocionales" component={DevotionalsPage} exact/>
+                  <Route path="/devocional/id/:_id" component={Devotional} exact/>
+                  <Route path="/politicas" component={PoliticsPage} exact/>                  
+                  {/*<Route path="/contacto" component={ContactPage} exact />*/}
                   <RutaPrivada path="/dashboard" component={DashboardPage} exact/>
                 </Switch>
               </Router>
@@ -50,3 +54,4 @@ function App() {
 }
 
 export default App;
+/*https://floating-crag-45749.herokuapp.com/*/

@@ -1,9 +1,7 @@
 import React,{useState} from 'react';
-import Devotional from '../components/Devotional/Devotional';
+import Devotionals from '../components/Devotional';
 import SideBar from "../components/LayoutMobile";
 import NavBar from "../components/Layout";
-import Stick from '../components/Stick';
-
 
 const DevotionalsPage = () => {
 
@@ -16,10 +14,9 @@ const DevotionalsPage = () => {
      
     return (
         <>
-      {/* <Stick/> */}
       <SideBar isOpen={isOpen} toggle={toggle} />
       <NavBar toggle={toggle}  noTop={noTop}/>
-      <Devotional/>
+      <Devotionals/>
     
     </>
     )

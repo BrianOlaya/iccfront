@@ -96,7 +96,7 @@ const Navbar = ({ toggle, noTop }) => {
                 Si,quiero
               </NavLinks>
             </NavItem>
-            <NavItem>
+            {/* <NavItem>
               <NavLinks
                 to="/contacto"
                 smooth={true}
@@ -108,7 +108,7 @@ const Navbar = ({ toggle, noTop }) => {
               >
                 Contáctanos
               </NavLinks>
-            </NavItem>
+            </NavItem> */}
           </NavMenu>
         </NavbarContainer>
       </Nav>

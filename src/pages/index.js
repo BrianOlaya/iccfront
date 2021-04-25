@@ -5,7 +5,8 @@ import HeadSection from "../components/HeadSection";
 import InfoSection from "../components/InfoSection";
 import Services from "../components/Services";
 import Footer from "../components/Footer";
-import Slider from "../components/Slider";
+import Slider from "../components/Slider2";
+import Stick from '../components/Stick'
 import {
   homeObjeOne,
   homeObjeThree,
@@ -24,6 +25,7 @@ const Home = () => {
 
   return (
     <>
+      {/* <Stick/> */}
       <SideBar isOpen={isOpen} toggle={toggle}  />
       <NavBar toggle={toggle} noTop={noTop} />
       <HeadSection {...containerHeadRows} />

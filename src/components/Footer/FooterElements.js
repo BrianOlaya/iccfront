@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export const FooterContainer = styled.footer`
   background-color: #051c59;
-
+ 
   @media screen and (max-width: 820px) {
     padding: 50px 0 ;
  
@@ -113,6 +113,10 @@ export const SocialLogo = styled(Link)`
   align-items: center;
   margin-bottom: 16px;
   font-weight: bold;
+  &:hover {
+    text-decoration: none;
+    color: #f1f2f4;
+  }
 `;
 
 export const ImgLogo = styled.img`

@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const InfoContainer = styled.div`
   color: #f1f2f4;
+ // border-top:thin solid #051C59;
   background: ${({ lightBg }) => (lightBg ? "#F1F2F4" : "#051C59")};
 `;
 

@@ -21,9 +21,8 @@ const Services = () => {
           <ServicesIcon src={principal} />
           <ServicesH2>Reuniones Pirincipales</ServicesH2>
           <ServicesP>
-            Te invitamos a que compartas con nosotros un gran tiempo de
-            celebración en la presencia de Dios. Infórmate aquí de nuestros
-            horarios.
+            Te invitamos a compartir con nosotros un gran tiempo de
+            celebración en la presencia de Dios. 
           </ServicesP>
         </ServicesCard>
         <ServicesCard>

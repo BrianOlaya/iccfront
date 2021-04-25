@@ -54,6 +54,10 @@ export const Icon = styled(Link)`
   @media screen and (max-width: 480px) {
     font-size: 20px;
   }
+  &:hover{
+    text-decoration: none;
+    color: #f1f2f4;
+  }
 `;
 export const FormContent = styled.div`
   height: 100%;

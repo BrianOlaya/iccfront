@@ -60,18 +60,7 @@ const SideBar = ({ isOpen, toggle }) => {
           >
             Si, quiero
           </SideBarLink>
-          <SideBarLink
-            to="/contacto"
-            smooth={true}
-            duration={500}
-            spy={true}
-            exact="true"
-            offset={-80}
-            onClick={toggle}
-          >
-            Contáctanos
-          </SideBarLink>
-        </SideBarMenu>
+         </SideBarMenu>
       </SideBarWrapper>
     </SideBarContainer>
   );

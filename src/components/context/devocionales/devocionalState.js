@@ -7,7 +7,8 @@ import {FORMULARIO_DEVOCIONAL,
         VALIDAR_FORMULARIO_DEVOCIONAL,
         DEVOCIONAL_ACTUAL,
         ERROR_DEVOCIONAL,
-        OCULTAR_FORMULARIO_DEVOCIONAL
+        OCULTAR_FORMULARIO_DEVOCIONAL,
+        OBTENER_DEVOCIONAL
     } from '../../types/index';  //como es index.js se puede quitar tambien y la importacion se hará correctamente, pero acá lo dejare asi
 import clientAxios from '../../../config/axios';
 
@@ -55,7 +56,7 @@ const ocultarFormularioDevocional=()=> {
     }
 }
 
-    //agregar devocional
+     //agregar devocional
     const agregarDevocional = async devocional=>{
         try {
             const resultado=await clientAxios.post('/api/devocionales', devocional);

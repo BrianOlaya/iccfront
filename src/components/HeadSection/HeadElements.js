@@ -174,6 +174,8 @@ export const ButtonHead = styled(LinkR)`
   &:hover {
     transition: all 0.2s ease-in-out;
     background: #0554f2;
+    text-decoration: none;
+    color: #f1f2f4;
   }
 
   @media screen and (max-width: 768px) {

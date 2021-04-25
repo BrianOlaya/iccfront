@@ -1,8 +1,18 @@
 import React, { useContext, useEffect } from "react";
+import { Link } from "react-router-dom";
 import devocionalContext from "../context/devocionales/devocionalContext";
 import AlertaContext from "../context/alertas/alertaContext";
 import Moment from "react-moment";
-import {ContainerDevotional, Title, Quote, Content, Author, Date,Loading} from './DevotionalElements';
+import {
+  CardDevotional,
+  Title,
+  Quote,
+  ButtonDev,
+  Author,
+  Date,
+  Loading,
+  ButtonDevocional,
+} from "./DevotionalElements";
 
 const ListDevotional = () => {
   //extraer devocionales de initialState
@@ -27,23 +37,22 @@ const ListDevotional = () => {
     return <Loading>Cargando devocionales...</Loading>;
 
   return (
-    <>{devocionales.length===0 ?<Title>devocional.titulo</Title>
-    
-    :
-    devocionales.map((devocional) => (
-      <ContainerDevotional>
-        <Title>{devocional.titulo}</Title>
-        <Quote>{devocional.cita}</Quote>
-        <Content>{devocional.contenido}</Content>
-        <Author>{devocional.autor}</Author>    
-        <Date>
-          <Moment format="YYYY/MM/DD">{devocional.registro}</Moment>
-        </Date>
-      </ContainerDevotional>
-    ))
-    
-    }
-    
+    <>   
+      {devocionales.map((devocional) => (
+        <CardDevotional>
+          <Title>{devocional.titulo}</Title>
+          <Quote>{devocional.cita}</Quote>
+          <Author>Autor: {devocional.autor}</Author>
+          <Date>
+           Publicado: <Moment format="YYYY/MM/DD">{devocional.registro}</Moment>
+          </Date>
+          <ButtonDev key={devocional._id}>
+            <ButtonDevocional to={`/devocional/id/${devocional._id}`}>
+              Ir al devocional
+            </ButtonDevocional>
+          </ButtonDev>
+        </CardDevotional>
+      ))}
     </>
   );
 };

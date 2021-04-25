@@ -38,6 +38,10 @@ export const NavLogo = styled(LinkR)`
   margin-left: 24px;
   font-weight: bold;
   text-decoration: none;
+  &:hover {
+     text-decoration: none;
+     color: ${({ scrollNav }) => (scrollNav ? "#092B8A" : "#F1F2F4")};
+  }
 `;
 export const ImgLogo = styled.img`
   width: 20%;
@@ -87,6 +91,7 @@ export const NavLinks = styled(LinkS)`
   &:hover {
     transition: all 0.2s ease-in-out;
     color: #0554f2;
+    text-decoration: none;
   }
 
   &.active {
@@ -120,5 +125,6 @@ export const NavBtnLink = styled(LinkR)`
     transition: all 0.2s ease-in-out;
     background: #0554f2;
     color: #f1f2f4;
+    text-decoration: none;
   }
 `;
