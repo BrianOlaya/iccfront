@@ -19,16 +19,16 @@ export const ContainerCards = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between; 
-  transform: skewY(-2deg);
+  /* transform: skewY(-2deg); */
   z-index:2;
 
   @media screen and (max-width: 768px) {
    flex-direction: column;
    justify-content: center;
-   margin-left: 15%;
+   /* margin-left: 15%; */
    margin-top: 10%;
    margin-bottom: 10%;  
-   transform: skewY(-1deg);
+   /* transform: skewY(-1deg); */
 }
 
 `;
@@ -41,7 +41,7 @@ export const Card = styled.div`
   background:#fff;
   transition: 0.5s;
 
-  &:before {
+  /* &:before {
     content: '';
     position: absolute;
     top: -15px;
@@ -65,7 +65,7 @@ export const Card = styled.div`
     transform: skewY(45deg);
     transition: 0.5s;
     border-bottom: 200px solid #d9d9d9;
-  }
+  } */
 
   &:hover{
     transform: translateY(-40px);
@@ -85,6 +85,7 @@ export const Card = styled.div`
   @media screen and (max-width: 768px) {
    margin-top: 8% ;  
    margin-bottom: 8% ; 
+   width:100%;
 
      &:hover{
     transform: translateY(-15px);
@@ -101,6 +102,10 @@ export const ImgBx = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+
+  @media screen and (max-width:768px){
+    width:100%;
+  }
 `;
 export const ImgCard = styled.img`
   max-width:100px;
@@ -113,11 +118,15 @@ export const TitleCard = styled.h3`
 export const Content = styled.div`
   position: relative;
   width:100%;
-  height: 200px;
+  height: 210px;
   padding:10px;
   color: black;
   background: #fff;
   text-align: center;
+  
+  @media screen and (max-width:768px){
+    height: 220px;
+  }
 
    
   &:before{
@@ -134,10 +143,15 @@ export const Content = styled.div`
     pointer-events: none;
     z-index: -1;    
   };
-   `;
+ `;
+
 export const ParagraphCard = styled.p`
   font-size: 15px;
   text-align:justify;
+  @media screen and (max-width:768px){
+    padding-top:1%;
+    font-size: 17px;
+  }
 
 `;
 

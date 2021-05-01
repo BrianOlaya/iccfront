@@ -88,7 +88,7 @@ const Login = (props) => {
               <Icon to="/">
                 {" "}
                 <ImgLogo src={logo2} alt="logo" />
-                Liderazgo ICC Itagüí
+                Liderazgo ICC Renacer
               </Icon>
               <FormH1>Bienvenid@</FormH1>
               <FormLabel htmlFor="for">Usuario</FormLabel>

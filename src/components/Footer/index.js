@@ -98,10 +98,10 @@ const FooterElements = () => {
           <SocialMediaWrap>
             <SocialLogo to="/" onClick={toggleHome}>
               <ImgLogo src={logo2} alt="logo" />
-              IccItagüí
+              IccRenacer
             </SocialLogo>
             <WebsiteRights>
-              Iglesia Cruzada Cristiana-Itagüí © {new Date().getFullYear()} Todos los derechos
+              Iglesia Cruzada Cristiana-Renacer para las naciones<br/> © {new Date().getFullYear()} Todos los derechos
               reservados.
             </WebsiteRights>
           </SocialMediaWrap>

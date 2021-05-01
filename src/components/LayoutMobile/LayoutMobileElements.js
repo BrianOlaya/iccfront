@@ -21,6 +21,11 @@ export const CloseIcon = styled(FaTimes)`
   color: #051c59;
 `;
 
+export const ImgLogo = styled.img`
+  width: 140px;
+ margin-top: 30px;
+  margin-left: -10px; 
+`;
 export const Icon = styled.div`
   position: absolute;
   top: 1.2rem;

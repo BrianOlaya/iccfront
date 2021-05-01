@@ -5,7 +5,7 @@ export const FooterContainer = styled.footer`
   background-color: #051c59;
  
   @media screen and (max-width: 820px) {
-    padding: 50px 0 ;
+    padding-bottom: 20px ;
  
   }
 `;
@@ -126,6 +126,9 @@ export const WebsiteRights = styled.small`
   color: #f1f2f4;
   margin-bottom: 16px;
   text-align:center;
+  @media screen and (max-width: 820px) {
+    margin-bottom: 6px;
+  }
 
 `;
 

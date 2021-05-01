@@ -42,7 +42,7 @@ const Navbar = ({ toggle, noTop }) => {
       <Nav scrollNav={scrollNav}  noTop={noTop}>
         <NavbarContainer>
           <NavLogo to="/" scrollNav={scrollNav} onClick={toggleHome}>
-            <ImgLogo src={scrollNav ? logo : logo2} alt="logo" /> IccItagüi
+            <ImgLogo src={scrollNav ? logo : logo2} alt="logo" /> IccRenacer
           </NavLogo>
           <MobileIcon onClick={toggle} scrollNav={scrollNav}>
             <FaBars />
@@ -61,7 +61,7 @@ const Navbar = ({ toggle, noTop }) => {
                 Nosotros
               </NavLinks>
             </NavItem>
-            <NavItem>
+            {/* <NavItem>
               <NavLinks
                 to="services"
                 smooth={true}
@@ -73,7 +73,7 @@ const Navbar = ({ toggle, noTop }) => {
               >
                 Actividades
               </NavLinks>
-            </NavItem>
+            </NavItem> */}
             <NavItem>
               <NavLinks
                 to="palabra"

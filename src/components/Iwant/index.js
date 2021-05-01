@@ -34,7 +34,9 @@ const Iwant = ({ isOpen, toggle }) => {
               y tengas una relación cercana con Él. Cuando esto ocurre tu visión
               respecto de la vida es cambiada totalmente. Y la paz y la plenitud
               que antes eran ocasionales y dependientes de circunstancias, hoy
-              son producidas por la Presencia Dios. Sin embargo, hay algo que no
+              son producidas por la Presencia Dios. 
+              
+              {/* Sin embargo, hay algo que no
               nos ha permitido esa relación cercana con Dios, esto es el pecado,
               que no es más que rebelarnos contra Dios y no tener en cuenta Su
               Palabra para nuestro diario vivir y sin darnos cuenta, esto trae
@@ -42,7 +44,7 @@ const Iwant = ({ isOpen, toggle }) => {
               causa de esta desobediencia todos mereciamos ser castigados. Pero
               Jesús, el Hijo de Dios, vino a enseñarnos el amor de Dios y ese
               castigo que nosotros mereciamos, Él lo llevo en nuestro lugar para
-              que todo aquel que a El se acerque reciba el perdón y vida eterna.           
+              que todo aquel que a El se acerque reciba el perdón y vida eterna.            */}
             </Paragraph>
             <ImgMsg>
             <TitleImg>"Porque de tal manera amó Dios al mundo, que ha dado a su Hijo unigénito, 

@@ -7,6 +7,7 @@ import {
   Invite,
   ModalPol,
   AlertForm,
+  ContainerForm,
   Form,
   Label,
   LabelPol,
@@ -59,7 +60,7 @@ const FormularioNuevos = () => {
     nombre,
     apellido,
     telefono,
-   // barrio,
+    // barrio,
     correo,
     //nacimiento,
     ciudad,
@@ -104,12 +105,14 @@ const FormularioNuevos = () => {
       telefono: "",
       ciudad: "",
       correo: "",
-     // nacimiento: "",
+      // nacimiento: "",
       //barrio: "",
       //politicas: false,
     });
 
-    mostrarAlerta("Datos enviados satisfactoriamente, pronto te contactaremos.");
+    mostrarAlerta(
+      "Datos enviados satisfactoriamente, pronto te contactaremos."
+    );
   };
 
   return (
@@ -119,41 +122,41 @@ const FormularioNuevos = () => {
           Si hiciste esta oración te invitamos a que nos dejes tus datos. <br />
           Queremos ayudarte y guiarte en tu crecimiento espiritual.
         </Invite>
-
-        <Form onSubmit={onSubmitNuevo}>
-          <Label>Nombre*</Label>
-          <InputNew
-            type="text"
-            placeholder="Tu Nombre"
-            name="nombre"
-            value={nombre}
-            onChange={onChangeNuevo}
-          />
-          <Label>Apellido*</Label>
-          <InputNew
-            type="text"
-            placeholder="Tus apellidos"
-            name="apellido"
-            value={apellido}
-            onChange={onChangeNuevo}
-          />
-          <Label># de Contácto*</Label>
-          <InputNew
-            type="number"
-            placeholder="# Fijo o celular"
-            name="telefono"
-            value={telefono}
-            onChange={onChangeNuevo}
-          />
-          <Label>Ciudad</Label>
-          <InputNew
-            type="text"
-            placeholder="Ciudad donde vives"
-            name="ciudad"
-            value={ciudad}
-            onChange={onChangeNuevo}
-          />
-          {/* <Label>Barrio</Label>
+        <ContainerForm>
+          <Form onSubmit={onSubmitNuevo}>
+            <Label>Nombre*</Label>
+            <InputNew
+              type="text"
+              placeholder="Tu Nombre"
+              name="nombre"
+              value={nombre}
+              onChange={onChangeNuevo}
+            />
+            <Label>Apellido*</Label>
+            <InputNew
+              type="text"
+              placeholder="Tus apellidos"
+              name="apellido"
+              value={apellido}
+              onChange={onChangeNuevo}
+            />
+            <Label># de Contácto*</Label>
+            <InputNew
+              type="number"
+              placeholder="# Fijo o celular"
+              name="telefono"
+              value={telefono}
+              onChange={onChangeNuevo}
+            />
+            <Label>Ciudad</Label>
+            <InputNew
+              type="text"
+              placeholder="Ciudad donde vives"
+              name="ciudad"
+              value={ciudad}
+              onChange={onChangeNuevo}
+            />
+            {/* <Label>Barrio</Label>
           <InputNew
             type="string"
             placeholder="Barrio  donde vives"
@@ -161,21 +164,26 @@ const FormularioNuevos = () => {
             value={barrio}
             onChange={onChangeNuevo}
           /> */}
-          <Label>Correo</Label>
-          <InputNew
-            type="email"
-            placeholder="Tu correo electronico"
-            name="correo"
-            value={correo}
-            onChange={onChangeNuevo}
-          />
-          {/* <Label>Fecha de Nacimiento</Label>
+            <Label>Correo</Label>
+            <InputNew
+              type="email"
+              placeholder="Tu correo electronico"
+              name="correo"
+              value={correo}
+              onChange={onChangeNuevo}
+            />
+            {/* <Label>Fecha de Nacimiento</Label>
           <InputNew
             type="date"
             name="nacimiento"
             value={nacimiento}
             onChange={onChangeNuevo}
           /> */}
+
+            {alerta ? <AlertForm>{alerta.msg}</AlertForm> : null}
+            <InputNewSubmit type="submit" value="Enviar" />
+          </Form>
+
           <Politicas>
             <InputNewPol
               type="checkbox"
@@ -184,13 +192,12 @@ const FormularioNuevos = () => {
               onChange={() => ChanngeAcept()}
             />
             <LabelPol>
-              Aceptar política de tratamineto de datos.
-              <LinkPol onClick={() => showPol()}>Ver más.</LinkPol>
+              Aceptar política de tratamiento de datos.            
             </LabelPol>
+
           </Politicas>
-          {alerta ? <AlertForm>{alerta.msg}</AlertForm> : null}
-          <InputNewSubmit type="submit" value="Enviar" />
-        </Form>
+          <LinkPol onClick={() => showPol()}>Ver más.</LinkPol>
+        </ContainerForm>
 
         <ModalPol isOpen={modalIsOpen}>
           <TitlePol>POLITICA DE TRATAMIENTO DE DATOS PERSONALES</TitlePol>
@@ -249,7 +256,7 @@ const FormularioNuevos = () => {
               <br />
               <TitleText> CONTROL DE SU INFORMACIÓN PERSONAL.</TitleText>
               <br />
-              Esta compañía no venderá, cederá ni distribuirá la información
+              La organización no venderá, cederá ni distribuirá la información
               personal que es recopilada sin su consentimiento, salvo que sea
               requerido por un juez con un orden judicial.
               <br />

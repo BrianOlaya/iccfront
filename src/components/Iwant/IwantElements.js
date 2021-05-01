@@ -120,7 +120,7 @@ export const Paragraph = styled.div`
   font-size: 18px;
   @media screen and (max-width: 480px) {
     width: 100%;
-    font-size: 14px;
+    //font-size: 14px;
   }
 `;
 
@@ -159,11 +159,14 @@ export const AlertForm = styled.p`
   padding: 1%;
   border-radius: 7px;
   margin-bottom: 2.5%;
+  @media screen and (max-width: 480px) {
+    font-size: 15px;
+  }
 `;
 export const Form = styled.form`
   display: flex;
   flex-direction: column;
-  width: 40%;
+  width: 80%;
   margin: 1% auto 2%;
   background: #ffffff;
   padding: 2.5% 3%;
@@ -171,6 +174,16 @@ export const Form = styled.form`
   @media screen and (max-width: 480px) {
     width: 100%;
   }
+`;
+
+export const ContainerForm = styled.div`
+width: 50%;
+padding-bottom:1%;
+@media screen and (max-width: 480px) {
+    width: 100%;
+    padding-bottom:2%;
+  }
+
 `;
 export const Label = styled.label`
   width: 100%;
@@ -182,22 +195,28 @@ export const Label = styled.label`
   }
 `;
 export const LabelPol = styled.label`
-  width: 85%;
-  font-weight: 700;
-  font-size: 18px;
-  color: #051c59;
+  width: 100%;
+  font-weight: 300;
+  font-size: 20px;
+  text-decoration:lightblue;
+  color: #f1f2f4;
   @media screen and (max-width: 480px) {
+    width: 80%;
     font-size: 15px;
   }
 `;
 export const InputNew = styled.input`
   width: 100%;
-  margin-bottom: 3.8%;
+  margin-bottom: 3%;
   font-size: 18px;
   border-color: #051c59;
   border-width: 2px;
   border-radius: 5px;
   padding: 3px;
+  @media screen and (max-width: 480px) {
+    font-size: 13px;
+
+  }
 `;
 export const InputNewPol = styled.input`
   width: 10%;
@@ -211,18 +230,34 @@ export const InputNewPol = styled.input`
 export const Politicas = styled.div`
   display: flex;
   align-items: center;
+  margin-left: 13%;
   padding-bottom: 1%;
   @media screen and (max-width: 480px) {
     //  flex-direction:column;
+    margin:auto;
   }
 `;
 
 export const LinkPol = styled.button`
-  cursor: pointer;
+ 
   font-size: 15px;
   border: none;
+  width:50%;
+  padding:1%;
+  margin-left:25%; 
+  border-radius:7px;
+  background:white;
   color: #051c59;
   //text-decoration: none;
+  :hover{
+    cursor: pointer; 
+    color:#092b8a;
+    
+  }
+  @media screen and (max-width: 480px) {
+    font-size: 13px;
+    padding:0.5%;
+  }
 `;
 
 export const ModalPol = styled(Modal)`
