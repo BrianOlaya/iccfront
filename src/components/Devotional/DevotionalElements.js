@@ -92,6 +92,7 @@ export const Title = styled.h2`
   font-weight: 400;
   @media screen and (max-width: 768px){
     margin-bottom: 2%;
+    font-size:25px
     }
 
 `;
@@ -102,6 +103,7 @@ export const Quote = styled.h3`
   font-weight: 400;
   @media screen and (max-width: 768px){
     margin-bottom: 3%;
+    font-size:23px
     }
 `;
 
@@ -177,8 +179,10 @@ export const TitleList = styled.h2`
   margin: 5% auto;
   text-align:center;
   //font-weight: 400;
+  font-size:40px;
   @media screen and (max-width: 768px){
     margin-bottom: 2%;
+    font-size:30px;
     }
 
 `;

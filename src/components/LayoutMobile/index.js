@@ -30,7 +30,7 @@ const SideBar = ({ isOpen, toggle }) => {
           >
             Nosotros
           </SideBarLink>
-          {/* <SideBarLink
+          <SideBarLink
             to="/actividades"
             smooth={true}
             duration={500}
@@ -40,7 +40,7 @@ const SideBar = ({ isOpen, toggle }) => {
             onClick={toggle}
           >
             Actividades
-          </SideBarLink> */}
+          </SideBarLink>
           <SideBarLink
             to="/devocionales"
             smooth={true}

@@ -19,7 +19,7 @@ const SliderTwo = () => {
   return (
     <ContainerSlider>
       <Carousel indicators={false}>
-        <Carousel.Item interval={4000} fade={true}>
+        <Carousel.Item interval={3000} fade={true}>
           <ContainerSlide>
             <ContanierConImg>
               <ContainerImg>
@@ -37,7 +37,7 @@ const SliderTwo = () => {
           </ContainerSlide>
         </Carousel.Item>
 
-        <Carousel.Item interval={4000} fade={true}>
+        <Carousel.Item interval={3000} fade={true}>
           <ContainerSlide>
             <ContanierConImg>
               <ContainerImg>
@@ -55,7 +55,7 @@ const SliderTwo = () => {
           </ContainerSlide>
         </Carousel.Item>
 
-        <Carousel.Item interval={4000} fade={true}>
+        <Carousel.Item interval={3000} fade={true}>
           <ContainerSlide>
             <ContanierConImg>
               <ContainerImg>

@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Link as LinkR } from "react-router-dom";
 import Modal from "react-modal";
 import nature from "../../images/sky.jpg";
-import croos from "../../images/cross2.jpg";
+import croos from "../../images/cross.jpg";
 
 export const ContainerGral = styled.div`
   width: 100%;
@@ -50,7 +50,7 @@ export const TitleGral = styled.h2`
 
 export const ImgMsg = styled.div`
   background: url(${croos});
-  background-size: 110%;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   text-align: center;
@@ -61,7 +61,6 @@ export const ImgMsg = styled.div`
   box-shadow: 10px 5px 5px #7c858b;
   @media screen and (max-width: 480px) {
     width: 100%;
-    background-size: 110%;
     height: 230px;
     margin: 3% auto;
     border-radius: 0;
